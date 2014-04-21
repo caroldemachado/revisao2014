@@ -79,7 +79,8 @@
 	      				<img src="http://revisaoparaque.com/blog/wp-content/uploads/2013/03/vidaderevisor.fw_.png" alt="thumb"/>
 	      				<h2><?php the_title(); ?></h2>
       				</a>
-      				<div class="post-info"><a class="tag-categoria" href="">vida de revisor</a><span class="post-data">3 de maio</span></div>
+      				<div class="post-info tag-categoria"><?php the_category(); ?></div>
+      				<span class="post-data">3 de maio</span>
       				<p><a href=""><?php the_excerpt(); ?></a></p>
     			</article>
 
@@ -106,7 +107,7 @@
 		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
 		      			<h2><?php the_title(); ?></h2>
 	      			</a>
-	      			<a href="" class="tag-categoria">vida de revisor</a>
+	      			<div class="post-info tag-categoria"><?php the_category(); ?></div>
 	      			<p><a href=""><?php the_excerpt(); ?></a></p>
     			</article>
     			<!--  Até aqui aqui-->
@@ -131,7 +132,7 @@
 						<a href="">
 							<h3>Solicite uma revisão</h3>
 							<p>Saiba mais sobre o nosso método de trabalho e como entrar em contato conosco.</p>
-							<a href="" class="tag-categoria">acessar</a>
+							<a href="" class="btn">acessar</a>
       					</a>
       				</div>
 				</aside>
@@ -140,7 +141,7 @@
 						<a href="">
 							<h3>Calculadora de laudas</h3>
 							<p>Nunca foi tão fácil calcular laudas. Experimente. =)</p>
-							<a href="" class="tag-categoria">acessar</a>
+							<a href="" class="btn">acessar</a>
       					</a>
       				</div>
 				</aside>
@@ -149,7 +150,7 @@
 						<a href="">
 							<h3>Calculadora de laudas</h3>
 							<p>Nunca foi tão fácil calcular laudas. Experimente. =)</p>
-							<a href="" class="tag-categoria">acessar</a>
+							<a href="" class="btn">acessar</a>
       					</a>
       				</div>
 				</aside>
