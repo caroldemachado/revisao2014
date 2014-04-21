@@ -213,6 +213,7 @@ body{
 	.conteudo-geral ul {
 		clear: both;
 		text-align: center;
+		width: 100%;
 	}
 
 	.conteudo-geral li {

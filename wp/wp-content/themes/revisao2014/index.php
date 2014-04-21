@@ -80,7 +80,7 @@
 	      				<h2><?php the_title(); ?></h2>
       				</a>
       				<div class="post-info"><a class="tag-categoria" href="">vida de revisor</a><span class="post-data">3 de maio</span></div>
-      				<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
+      				<p><a href=""><?php the_excerpt(); ?></a></p>
     			</article>
 
 				<!--  Até aqui aqui-->
@@ -97,104 +97,21 @@
 		</section>
 <!-- ################# conteúdo ############################ -->
 		<section class="conteudo-geral">
-			<div class="container">
+			<div class="container clearfix">
+				<!--  Repete aqui-->
+				 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
 				<article class="post-box">
 					<a href="">
 		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-		      			<h2>[App] Guia prático da nova ortografia</h2>
+		      			<h2><?php the_title(); ?></h2>
 	      			</a>
 	      			<a href="" class="tag-categoria">vida de revisor</a>
-	      			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
+	      			<p><a href=""><?php the_excerpt(); ?></a></p>
     			</article>
-    		<article class="post-box">
-					<a href="">
-		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-		      			<h2>[App] Guia prático da nova ortografia</h2>
-	      			</a>
-	      			<a href="" class="tag-categoria">vida de revisor</a>
-	      			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
-    			</article>
-    		<article class="post-box">
-					<a href="">
-		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-		      			<h2>[App] Guia prático da nova ortografia</h2>
-	      			</a>
-	      			<a href="" class="tag-categoria">vida de revisor</a>
-	      			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
-    			</article>
-    		<article class="post-box">
-					<a href="">
-		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-		      			<h2>[App] Guia prático da nova ortografia</h2>
-	      			</a>
-	      			<a href="" class="tag-categoria">vida de revisor</a>
-	      			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
-    			</article>
-    		<article class="post-box">
-					<a href="">
-		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-		      			<h2>[App] Guia prático da nova ortografia</h2>
-	      			</a>
-	      			<a href="" class="tag-categoria">vida de revisor</a>
-	      			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
-    			</article>
-    		<article class="post-box">
-					<a href="">
-		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-		      			<h2>[App] Guia prático da nova ortografia</h2>
-	      			</a>
-	      			<a href="" class="tag-categoria">vida de revisor</a>
-	      			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
-    			</article>
-    		<article class="post-box">
-					<a href="">
-		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-		      			<h2>[App] Guia prático da nova ortografia</h2>
-	      			</a>
-	      			<a href="" class="tag-categoria">vida de revisor</a>
-	      			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
-    			</article>
-    		<article class="post-box">
-					<a href="">
-		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-		      			<h2>[App] Guia prático da nova ortografia</h2>
-	      			</a>
-	      			<a href="" class="tag-categoria">vida de revisor</a>
-	      			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
-    			</article>
-    		<article class="post-box">
-					<a href="">
-		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-		      			<h2>[App] Guia prático da nova ortografia</h2>
-	      			</a>
-	      			<a href="" class="tag-categoria">vida de revisor</a>
-	      			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
-    			</article>
-    		<article class="post-box">
-					<a href="">
-		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-		      			<h2>[App] Guia prático da nova ortografia</h2>
-	      			</a>
-	      			<a href="" class="tag-categoria">vida de revisor</a>
-	      			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
-    			</article>
-    		<article class="post-box">
-					<a href="">
-		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-		      			<h2>[App] Guia prático da nova ortografia</h2>
-	      			</a>
-	      			<a href="" class="tag-categoria">vida de revisor</a>
-	      			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
-				</article>
-			<article class="post-box">
-					<a href="">
-						<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
-			 			<h2>[App] Guia prático da nova ortografia</h2>
-					</a>
-					<a href="" class="tag-categoria">vida de revisor</a>
-		  			<p><a href="">Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os primeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</a></p>
-				</article> 
-				<ul>
+    			<!--  Até aqui aqui-->
+    			<?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
+    			<ul>
 					<li class="clicked"><a href="">1</a></li>
 					<li><a href="">2</a></li>
     				<li><a href="">3</a></li>
