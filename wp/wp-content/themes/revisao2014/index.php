@@ -13,7 +13,7 @@
 <!-- ################# cabeçalho ############################ -->
 	<header>
 		<div class="container">
-			<div class="logo"><img src="img/logo-revisao-para-que.png" alt="Logotipo Revisão para quê?"></div>
+			<div class="logo"><img src="<?php bloginfo('template_url') ?>/img/logo-revisao-para-que.png" alt="Logotipo Revisão para quê?"></div>
 			<div class="info-topo">
 				<nav class="menu-paginas">
   			 		<ul>
