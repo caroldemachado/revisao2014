@@ -8,6 +8,12 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic' rel='stylesheet' type='text/css'>
     <meta name="description" content="O Revisão para quê? é um site sobre revisão, redação e leitura de textos.">
     <meta charset="utf-8">
+	
+	<!-- WP Header --> 
+	<?php wp_head() ?>
+	<!-- // WP Header --> 
+
+
   </head>
 <body>
 <!-- ################# cabeçalho ############################ -->
@@ -239,6 +245,10 @@
       				</div>
 				</section>
 			</div>
+
+			<!-- WP Header --> 
+			<?php wp_footer() ?>
+			<!-- // WP Header --> 
 		</footer>
 	</body>
 </html>
