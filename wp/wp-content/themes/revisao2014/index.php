@@ -75,7 +75,7 @@
 				 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<article class="post-box">
-					<a href="">
+					<a href="<?php the_permalink() ?>">
 	      				<img src="http://revisaoparaque.com/blog/wp-content/uploads/2013/03/vidaderevisor.fw_.png" alt="thumb"/>
 	      				<h2><?php the_title(); ?></h2>
       				</a>
@@ -103,7 +103,7 @@
 				 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<article class="post-box">
-					<a href="">
+					<a href="<?php the_permalink() ?>">
 		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
 		      			<h2><?php the_title(); ?></h2>
 	      			</a>
