@@ -1,0 +1,146 @@
+/* classes Gerais */
+
+h1 {
+	color: #52525F;
+	font-size: 40px;
+}
+
+
+
+
+	/* content-container */
+
+	.content-container {
+		float: left; 
+		width: 815px;
+	}
+
+	.sidebar {
+		float: right;
+		margin-top: 30px;
+		width:235px;
+	}
+
+
+	/* newsletter */
+
+	.single .newsletter {
+		float: none;
+		height: 329px;
+		padding: 20px 20px;
+		text-align: center;
+		width:100%;
+	}
+
+	.single .newsletter h3 {
+		margin: 30px 10px;
+		padding: 0;
+		text-align: center;
+	}
+	
+	.single .newsletter input {
+		border: none;
+		height: 34px;
+		margin: 0 0 15px 0;
+		width: 100%;
+	}
+	
+
+	/* author info */
+	.sidebar .author-info {
+		color: #A6A6B7;
+		border-left: 1px solid #D4D4D7;
+		height: 405px;
+		margin-top: 60px;
+		padding: 0 20px;
+	}
+
+	.author-info a {
+		color: #2BACB4;
+		display: inline-block;
+		margin: 5px 0;
+	}
+
+	.author-info h4 {
+		font-size: 18px;
+		font-weight: 400;
+		text-transform: capitalize;
+	}
+
+	.author-info p {
+		margin: 10px 0 10px 0;
+	}
+
+	.author-photo {
+		border-radius: 150px;
+		height: 150px;
+		overflow: hidden;
+		width: 150px;
+	}
+
+	/* conteúdo */
+
+	.img-container img {
+		margin: 30px 0;
+	}
+
+	.post-lead {
+		color: #A7A7B7;
+		font-family: 'Droid Serif', serif;
+		font-size: 22px;
+		font-style: italic;
+		line-height: 150%;
+	}
+
+	.share-buttons h4 {
+		color: #DCDCE3;
+		display: inline-block;
+		font-weight: 400;
+	}
+
+	.share-buttons span {
+		border-top: 1px solid #DCDCE3;
+		display: inline-block;
+		margin: 0 10px 4px 10px;
+		width: 430px;
+	}
+
+	.main-content {
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 120%;
+		margin: 60px 0;
+	}
+
+	.share-read-comment {
+		border: 1px solid #B9B9C8;
+		border-radius: 3px;
+		padding: 15px 15px;
+	}
+
+	.share-read-comment img {
+		float: right; 
+		margin: -6px 0 0 0;
+	}
+
+	.share-read-comment h4 {
+		display: inline;
+		width: 300px;
+	}
+
+	/* leia mais */
+
+	.leia-mais .post-box {
+		float: left;
+		margin: 75px 40px 10px 0;
+		width: 230px;
+	}
+
+	.leia-mais .post-box:nth-child(4n){
+		margin-right: 0;
+	}
+
+	.leia-mais h3 {
+		font-size: 22px;
+	}
+
