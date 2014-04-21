@@ -1,8 +1,8 @@
 <html>
   <head>
     <title>Revisão para quê? | Revisão de texto com bom humor</title>
-    <link href="css/reset.css" type="text/css" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url') ?>/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url') ?>/css/style.css" type="text/css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic,300italic' rel='stylesheet' type='text/css'>
   	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic' rel='stylesheet' type='text/css'>
@@ -24,9 +24,9 @@
   			 		</ul>
   				</nav>
   				<ul class="social-icons">
-     				<li><a href=""><img src="img/twitter.png" alt="twitter"></a></li>
-     				<li><a href=""><img src="img/facebook.png" alt="facebook"></a></li>
-     				<li><a href=""><img src="img/youtube.png" alt="youtube"></a></li>
+     				<li><a href=""><img src="<?php bloginfo('template_url') ?>/img/twitter.png" alt="twitter"></a></li>
+     				<li><a href=""><img src="<?php bloginfo('template_url') ?>/img/facebook.png" alt="facebook"></a></li>
+     				<li><a href=""><img src="<?php bloginfo('template_url') ?>/img/youtube.png" alt="youtube"></a></li>
    				</ul>
   			</div>
   		</div>
@@ -100,7 +100,7 @@
 <!-- ################# banner ############################ -->
 		<section class="banner-half">
 			<div class="container">
-				<img src="img/full-banner.png" alt="revisão de texto para blogs"/>
+				<img src="<?php bloginfo('template_url') ?>/img/full-banner.png" alt="revisão de texto para blogs"/>
 			</div>
 		</section>
 <!-- ################# conteúdo ############################ -->
@@ -247,9 +247,9 @@
 			</div>
 				<section class="creative-commons">
 					<div class="container">
-						<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="img/copy.png"></a>
+						<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="<?php bloginfo('template_url') ?>/img/copy.png"></a>
 	      				<p>2011-2014 revisaoparaque.com - Alguns direitos reservados. <a href="">Conheça.</a></p>
-	      				<a class="logo-fefo"><img src="img/logo-fernando-aguirre.png" alt="logo-fefo"></a>
+	      				<a class="logo-fefo"><img src="<?php bloginfo('template_url') ?>/img/logo-fernando-aguirre.png" alt="logo-fefo"></a>
       				</div>
 				</section>
 			</div>
