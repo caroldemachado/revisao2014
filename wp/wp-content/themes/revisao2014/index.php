@@ -19,15 +19,10 @@
 <!-- ################# cabeçalho ############################ -->
 	<header>
 		<div class="container">
-			<div class="logo"><img src="<?php bloginfo('template_url') ?>/img/logo-revisao-para-que.png" alt="Logotipo Revisão para quê?"></div>
+			<div class="logo"><a href="<?php bloginfo('url')?>" title="voltar para a home"><img src="<?php bloginfo('template_url') ?>/img/logo-revisao-para-que.png" alt="Logotipo Revisão para quê?"></a></div>
 			<div class="info-topo">
 				<nav class="menu-paginas">
-  			 		<ul>
-    			 		<li><a href="">sobre</a></li>
-    			 		<li><a href="">e-book</a></li>
-    			 		<li><a href="">para empresas</a></li>
-    			 		<li><a href="">contato</a></li>
-  			 		</ul>
+  			 		<?php wp_nav_menu( array( 'theme_location' => 'meu_menu' ) ); ?>
   				</nav>
   				<ul class="social-icons">
      				<li><a href=""><img src="<?php bloginfo('template_url') ?>/img/twitter.png" alt="twitter"></a></li>
@@ -39,14 +34,7 @@
 		<div class="menu-categorias">
 			<div class="container">
 				<nav>
-  					<ul>
-				        <li><a href="">Vida de Revisor</a></li>
-				        <li><a href="">Gramática</a></li>
-				        <li><a href="">Dicas</a></li>
-				        <li><a href="">Redação</a></li>
-				        <li><a href="">Nova ortografia</a></li>
-				        <li><a href="">TCC</a></li>
-   					</ul>
+					<?php wp_nav_menu( array( 'theme_location' => 'menu_de_categorias' ) ); ?>
  				</nav>
  			</div>
  		</div>
@@ -76,7 +64,7 @@
 
 				<article class="post-box">
 					<a href="<?php the_permalink() ?>">
-	      				<img src="http://revisaoparaque.com/blog/wp-content/uploads/2013/03/vidaderevisor.fw_.png" alt="thumb"/>
+	      				<?php the_post_thumbnail(array(520,250)); ?></a>
 	      				<h2><?php the_title(); ?></h2>
       				</a>
       				<div class="post-info tag-categoria"><?php the_category(); ?></div>
@@ -104,7 +92,7 @@
 
 				<article class="post-box">
 					<a href="<?php the_permalink() ?>">
-		      			<img src="http://revisaoparaque.com/blog/wp-content/uploads/2014/03/vidaderevisor.fw_.png" alt="thumb"/>
+		      			<?php the_post_thumbnail(array(240,115)); ?></a>
 		      			<h2><?php the_title(); ?></h2>
 	      			</a>
 	      			<div class="post-info tag-categoria"><?php the_category(' '); ?></div>
