@@ -1,16 +1,6 @@
-<html>
-  <head>
-    <title>Revisão para quê? | Revisão de texto com bom humor</title>
-    <link href="css/reset.css" type="text/css" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <link href="css/style_internas.css" type="text/css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,400italic,300italic' rel='stylesheet' type='text/css'>
-  	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic' rel='stylesheet' type='text/css'>
-    <meta name="description" content="O Revisão para quê? é um site sobre revisão, redação e leitura de textos.">
-    <meta charset="utf-8">
-  </head>
-<body class="single">
+<!-- Load Head -->
+<?php get_template_part('head'); ?> 
+
 <!-- ################# cabeçalho ############################ -->
 	<header>
 		<div class="container">
@@ -68,21 +58,7 @@
 			</div>
 
 			<div class="main-content">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis enim nec ipsum euismod, nec condimentum mi hendrerit. Duis in dolor sed massa rutrum eleifend quis at est. Phasellus odio nisi, consequat ut arcu eu, tempor vehicula sapien. Vestibulum molestie interdum tortor eu accumsan. Donec vitae turpis malesuada, congue nibh euismod, imperdiet tortor. Vivamus eu dapibus nunc. Integer gravida nisi non purus imperdiet ultricies.
-
-				Ut sit amet mi nec nibh rutrum vehicula. Sed ultrices imperdiet mauris a ornare. Aliquam quis ante placerat, fermentum ante nec, tempor nisi. Morbi iaculis sem eget metus scelerisque, quis faucibus odio varius. Vivamus pulvinar sagittis erat id euismod. Vestibulum cursus sed velit vitae hendrerit. Donec tempus mattis turpis, at hendrerit nulla suscipit non.
-
-				Nulla eget diam luctus nunc laoreet feugiat ut fringilla nisl. Integer ut sem tincidunt, feugiat urna non, fringilla nulla. Mauris tincidunt dui quam, gravida vehicula risus rutrum in. Aliquam mollis lobortis ligula, in lobortis massa interdum et. Nam vel tortor a diam tempus euismod a eget tellus. Pellentesque eget tortor venenatis ipsum dapibus molestie pulvinar ut ipsum. Aenean iaculis ut lacus eu dictum. Mauris tempor tristique enim, quis faucibus arcu scelerisque sit amet. Sed rhoncus lectus id gravida interdum. Aenean sed lorem ultrices, blandit metus sed, pellentesque sapien. Mauris ultrices, tellus eu feugiat commodo, tellus augue rutrum justo, eu ultrices elit nulla et arcu. Maecenas volutpat, urna adipiscing feugiat dignissim, ipsum neque blandit nisi, id dignissim massa nibh dignissim ipsum. Donec vehicula fermentum tincidunt.
-
-				In sit amet eleifend metus, in luctus dolor. Integer dui metus, accumsan vitae fermentum in, lobortis
-
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis enim nec ipsum euismod, nec condimentum mi hendrerit. Duis in dolor sed massa rutrum eleifend quis at est. Phasellus odio nisi, consequat ut arcu eu, tempor vehicula sapien. Vestibulum molestie interdum tortor eu accumsan. Donec vitae turpis malesuada, congue nibh euismod, imperdiet tortor. Vivamus eu dapibus nunc. Integer gravida nisi non purus imperdiet ultricies.
-
-				Ut sit amet mi nec nibh rutrum vehicula. Sed ultrices imperdiet mauris a ornare. Aliquam quis ante placerat, fermentum ante nec, tempor nisi. Morbi iaculis sem eget metus scelerisque, quis faucibus odio varius. Vivamus pulvinar sagittis erat id euismod. Vestibulum cursus sed velit vitae hendrerit. Donec tempus mattis turpis, at hendrerit nulla suscipit non.
-
-				Nulla eget diam luctus nunc laoreet feugiat ut fringilla nisl. Integer ut sem tincidunt, feugiat urna non, fringilla nulla. Mauris tincidunt dui quam, gravida vehicula risus rutrum in. Aliquam mollis lobortis ligula, in lobortis massa interdum et. Nam vel tortor a diam tempus euismod a eget tellus. Pellentesque eget tortor venenatis ipsum dapibus molestie pulvinar ut ipsum. Aenean iaculis ut lacus eu dictum. Mauris tempor tristique enim, quis faucibus arcu scelerisque sit amet. Sed rhoncus lectus id gravida interdum. Aenean sed lorem ultrices, blandit metus sed, pellentesque sapien. Mauris ultrices, tellus eu feugiat commodo, tellus augue rutrum justo, eu ultrices elit nulla et arcu. Maecenas volutpat, urna adipiscing feugiat dignissim, ipsum neque blandit nisi, id dignissim massa nibh dignissim ipsum. Donec vehicula fermentum tincidunt.
-
-				In sit amet eleifend metus, in luctus dolor. Integer dui metus, accumsan vitae fermentum in, lobortis
+				<?php the_content() ?>
 			</div>
 		</article>
 
