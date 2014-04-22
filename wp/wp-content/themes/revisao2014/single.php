@@ -2,49 +2,15 @@
 <?php get_template_part('head'); ?> 
 
 <!-- ################# cabeçalho ############################ -->
-	<header>
-		<div class="container">
-			<div class="logo"><a href="home.html"><img src="img/logo-revisao-para-que.png" alt="Logotipo Revisão para quê?"></a></div>
-			<div class="info-topo">
-				<nav class="menu-paginas">
-  			 		<ul>
-    			 		<li><a href="">sobre</a></li>
-    			 		<li><a href="">e-book</a></li>
-    			 		<li><a href="">para empresas</a></li>
-    			 		<li><a href="">contato</a></li>
-  			 		</ul>
-  				</nav>
-  				<ul class="social-icons">
-     				<li><a href=""><img src="img/twitter.png" alt="twitter"></a></li>
-     				<li><a href=""><img src="img/facebook.png" alt="facebook"></a></li>
-     				<li><a href=""><img src="img/youtube.png" alt="youtube"></a></li>
-   				</ul>
-  			</div>
-  		</div>
-		<div class="menu-categorias">
-			<div class="container">
-				<nav>
-  					<ul>
-				        <li><a href="">Vida de Revisor</a></li>
-				        <li><a href="">Gramática</a></li>
-				        <li><a href="">Dicas</a></li>
-				        <li><a href="">Redação</a></li>
-				        <li><a href="">Nova ortografia</a></li>
-				        <li><a href="">TCC</a></li>
-   					</ul>
- 				</nav>
- 			</div>
-  		</div>
-	</header>
-
+<?php get_template_part('header'); ?> 
 
 
 <!-- ################# conteúdo ########################## -->
 <div class="clearfix container">
 	<div class="content-container">
 		<article>
-			<div class="img-container"><img src="img/img-article.fw.png" alt="Titulo do post"/></div>
-			<h1>TEXTO: 10 PASSOS PARA ESCREVER DE FORMA MAIS EFICIENTE</h1>
+			<div class="img-container"><?php the_post_thumbnail(array(803,328)); ?></div>
+			<h1><?php the_title(); ?></h1>
 			<div class="post-info">
 				<a class="tag-categoria" href="">vida de revisor</a>
 				<span class="post-data">3 de maio</span>
@@ -114,7 +80,7 @@
 		<!-- Author Info -->
 		<div class="author-info">
 			<div class="author-photo"><img src="img/author-photo.png"></div>
-			<h4 class="">Carolina Machado</h4>
+			<h4>Carolina Machado</h4>
 			<p>Idealizou este blog e, desde então, briga diariamente com HTML, CSS e design. Graduada em Letras pela PUCRS. Revisora de textos e editora de conteúdo. Tem pretensões de dominar o mundo, só não sabe muito bem como.<p>
 			<a href="">Conheça o autor.</a>
 			<a href="">Outros posts deste autor.</a>
@@ -125,45 +91,7 @@
 
 
 <!-- ################# rodapé ############################ -->
-<footer>
-	<div class="container">
-		<aside>
-			<div>
-				<a href="#um">
-					<h3>Solicite uma revisão</h3>
-					<p>Saiba mais sobre o nosso método de trabalho e como entrar em contato conosco.</p>
-					<a href="#dois" class="tag-categoria">acessar</a>
-					</a>
-				</div>
-		</aside>
-		<aside>
-			<div>
-				<a href="">
-					<h3>Calculadora de laudas</h3>
-					<p>Nunca foi tão fácil calcular laudas. Experimente. =)</p>
-					<a href="" class="tag-categoria">acessar</a>
-					</a>
-				</div>
-		</aside>
-		<aside>
-			<div>
-				<a href="">
-					<h3>Calculadora de laudas</h3>
-					<p>Nunca foi tão fácil calcular laudas. Experimente. =)</p>
-					<a href="" class="tag-categoria">acessar</a>
-					</a>
-				</div>
-		</aside>
-	</div>
-		<section class="creative-commons">
-			<div class="container">
-				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="img/copy.png"></a>
-  				<p>2011-2014 revisaoparaque.com - Alguns direitos reservados. <a href="">Conheça.</a></p>
-  				<a class="logo-fefo"><img src="img/logo-fernando-aguirre.png" alt="logo-fefo"></a>
-				</div>
-		</section>
-	</div>
-</footer>
+<?php get_template_part('footer'); ?> 
 
 
 </body>

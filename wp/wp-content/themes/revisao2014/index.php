@@ -3,29 +3,9 @@
 
 
 <!-- ################# cabeçalho ############################ -->
-	<header>
-		<div class="container">
-			<div class="logo"><a href="<?php bloginfo('url')?>" title="voltar para a home"><img src="<?php bloginfo('template_url') ?>/img/logo-revisao-para-que.png" alt="Logotipo Revisão para quê?"></a></div>
-			<div class="info-topo">
-				<nav class="menu-paginas">
-  			 		<?php wp_nav_menu( array( 'theme_location' => 'meu_menu' ) ); ?>
-  				</nav>
-  				<ul class="social-icons">
-     				<li><a href=""><img src="<?php bloginfo('template_url') ?>/img/twitter.png" alt="twitter"></a></li>
-     				<li><a href=""><img src="<?php bloginfo('template_url') ?>/img/facebook.png" alt="facebook"></a></li>
-     				<li><a href=""><img src="<?php bloginfo('template_url') ?>/img/youtube.png" alt="youtube"></a></li>
-   				</ul>
-  			</div>
-  		</div>
-		<div class="menu-categorias">
-			<div class="container">
-				<nav>
-					<?php wp_nav_menu( array( 'theme_location' => 'menu_de_categorias' ) ); ?>
+	<?php get_template_part('header'); ?> 
 
- 				</nav>
- 			</div>
- 		</div>
-	</header>
+
 <!-- ################# frase destaque ############################## -->
 		<section class="frase-destaque">
 			<div class="container">
@@ -100,48 +80,8 @@
     		</div>
 		</section>
 <!-- ################# rodapé ############################ -->
-		<footer>
-			<div class="container">
-				<aside>
-					<div>
-						<a href="">
-							<h3>Solicite uma revisão</h3>
-							<p>Saiba mais sobre o nosso método de trabalho e como entrar em contato conosco.</p>
-							<a href="" class="btn">acessar</a>
-      					</a>
-      				</div>
-				</aside>
-				<aside>
-					<div>
-						<a href="">
-							<h3>Calculadora de laudas</h3>
-							<p>Nunca foi tão fácil calcular laudas. Experimente. =)</p>
-							<a href="" class="btn">acessar</a>
-      					</a>
-      				</div>
-				</aside>
-				<aside>
-					<div>
-						<a href="">
-							<h3>Calculadora de laudas</h3>
-							<p>Nunca foi tão fácil calcular laudas. Experimente. =)</p>
-							<a href="" class="btn">acessar</a>
-      					</a>
-      				</div>
-				</aside>
-			</div>
-				<section class="creative-commons">
-					<div class="container">
-						<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="<?php bloginfo('template_url') ?>/img/copy.png"></a>
-	      				<p>2011-2014 revisaoparaque.com - Alguns direitos reservados. <a href="">Conheça.</a></p>
-	      				<a class="logo-fefo"><img src="<?php bloginfo('template_url') ?>/img/logo-fernando-aguirre.png" alt="logo-fefo"></a>
-      				</div>
-				</section>
-			</div>
+		<?php get_template_part('footer'); ?> 
 
-			<!-- WP Header --> 
-			<?php wp_footer() ?>
-			<!-- // WP Header --> 
-		</footer>
+			
 	</body>
 </html>
