@@ -37,35 +37,24 @@
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
 			<img src="img/img-share.png" class="img-share"/>
 		</section>
-
+<?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
 
 	<!-- ################# leia mais ######################### -->
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 		
 		<section class="leia-mais">
 			<div class="post-box">
-				<a href="">
-		  			<h3>[App] Guia prático da nova ortografia</h3>				
-					<p>Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os rimeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</p>
+				<a href="<?php the_permalink() ?>">
+		  			<h3><?php the_title(); ?></h3>				
+					<?php the_excerpt(); ?>
 				</a>
 			</div>
-			<div class="post-box">
-				<a href="">
-		  			<h3>[App] Guia prático da nova ortografia</h3>				
-					<p>Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os rimeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</p>
-				</a>
-			</div>
-			<div class="post-box">
-				<a href="">
-		  			<h3>[App] Guia prático da nova ortografia</h3>				
-					<p>Hoje foi ao ar a conversa que tive com o Luciano Larrossa da Escola Freelancer. Lá falamos sobre como dar os rimeiros passos para torna-se um revisor freelancer, entre outros assuntos pertinentes à profissão.</p>
-				</a>
-			</div>
-		 </section>
-
+<?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
 		 <!-- ################# Comments ######################## -->
 		 <section class="comments">
 		 	<p>Comentários aqui =)</p>
 		 </section>
 	</div><!-- End Content container -->
+
 
 
 	<!-- ################# Sidebar ######################## -->
@@ -92,7 +81,7 @@
 	</aside>
 </div><!-- End Container -->
 
-<?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
+
 <!-- ################# rodapé ############################ -->
 <?php get_template_part('footer'); ?> 
 
