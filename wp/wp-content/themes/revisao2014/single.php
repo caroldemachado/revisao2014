@@ -35,7 +35,7 @@
 			<h4>COMPARTILHE, LEIA MAIS  e COMENTE</h4>
 			<div class="fb-like" data-href="http://www.revisaoparaque.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 			<a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
-			<img src="img/img-share.png" class="img-share"/>
+			<div class="google-plus"><div class="g-plusone"></div>
 		</section>
 <?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
 
@@ -51,7 +51,7 @@
 <?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
 		 <!-- ################# Comments ######################## -->
 		 <section class="comments">
-		 	<p>Comentários aqui =)</p>
+		 	<div><?php comments_template(); ?> </div>
 		 </section>
 	</div><!-- End Content container -->
 
@@ -71,11 +71,11 @@
 
 		<!-- Author Info -->
 		<div class="author-info">
-			<div class="author-photo"><img src="img/author-photo.png"></div>
+			<div class="author-photo"><?php if (function_exists('get_avatar')) { echo get_avatar( get_the_author_email(), '100' ); }?></div>
 			<h4><?php the_author(); ?></h4>
 			<p><?php the_author_meta( description, $userID ); ?><p>
-			<?php the_author_link(); ?> 
-			<?php the_author_posts(); ?> 
+			<a href="<?php the_author_url(); ?>">Saiba mais sobre o autor.</a> 
+			<a href"<?php the_author_posts(); ?>">Mais posts desse autor.</a> 
 		</div>
 
 	</aside>

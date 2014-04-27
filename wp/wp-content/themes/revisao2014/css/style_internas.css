@@ -72,10 +72,10 @@ h1 {
 	}
 
 	.author-photo {
-		border-radius: 150px;
-		height: 150px;
+		border-radius: 100px;
+		height: 100px;
 		overflow: hidden;
-		width: 150px;
+		width: 100px;
 	}
 
 	/* conteúdo */
@@ -138,7 +138,7 @@ h1 {
 
 	.leia-mais .post-box {
 		float: left;
-		margin: 75px 40px 10px 0;
+		margin: 50px 40px 50px 0;
 		width: 230px;
 	}
 
@@ -149,4 +149,8 @@ h1 {
 	.leia-mais h3 {
 		font-size: 22px;
 	}
+
+	.fb-like {float: right;}
+	.twitter-share-button {float: right;}
+	.google-plus {float: right;}
 
