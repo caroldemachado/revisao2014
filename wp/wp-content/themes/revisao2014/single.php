@@ -22,7 +22,7 @@
 				<span class="fio"></span>
 				<div class="fb-like" data-href="http://www.revisaoparaque.com" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 				<a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="pt_br">Tweet</a>
-				<div class="g-plusone"></div>
+				<div class="google-plus"><div class="g-plusone"></div></div>
 			</div>
 			<div class="main-content">
 				<?php the_content() ?>

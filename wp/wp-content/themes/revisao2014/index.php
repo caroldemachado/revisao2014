@@ -31,12 +31,12 @@
 
 				<article class="post-box">
 					<a href="<?php the_permalink() ?>">
-	      				<?php the_post_thumbnail(array(520,250)); ?></a>
+	      				<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(520,250)); ?></a>
 	      				<h2><?php the_title(); ?></h2>
       				</a>
       				<div class="post-info tag-categoria"><?php the_category(); ?></div>
       				<span class="post-data"><?php the_date('d \d\e F'); ?></span>
-      				<p><a href=""><?php the_excerpt(); ?></a></p>
+      				<p><a href="<?php the_permalink() ?>"><?php the_excerpt(); ?></a></p>
     			</article>
 
 				<!--  Até aqui aqui-->
