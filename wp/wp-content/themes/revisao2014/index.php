@@ -30,10 +30,8 @@
 				 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<article class="post-box">
-					<a href="<?php the_permalink() ?>">
-	      				<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(520,250)); ?></a>
-	      				<h2><?php the_title(); ?></h2>
-      				</a>
+					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(520,250)); ?></a>
+	      			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
       				<div class="post-info tag-categoria"><?php the_category(); ?></div>
       				<span class="post-data"><?php the_date('d \d\e F'); ?></span>
       				<p><a href="<?php the_permalink() ?>"><?php the_excerpt(); ?></a></p>
