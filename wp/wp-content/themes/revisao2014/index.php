@@ -27,7 +27,7 @@
 			<div class="container">
 
 				<!--  Repete aqui-->
-				 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				 <?php query_posts($query_string.'showposts=4'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<article class="post-box">
 					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(520,250)); ?></a>

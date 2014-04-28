@@ -5,9 +5,10 @@
 <?php get_template_part('header'); ?>
 
 <!-- ################# conteúdo ########################## -->
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
 <div class="clearfix container">
 	<div class="content-container">
-		<article>
+		<article class="main-content">
 			<h1><?php the_title(); ?></h1>
 			<?php the_content(); ?>
 		</article>
@@ -29,7 +30,7 @@
 
 	</aside>
 </div><!-- End Container -->
-
+<?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
 
 <!-- ################# rodapé ############################ -->
 <?php get_template_part('footer'); ?> 

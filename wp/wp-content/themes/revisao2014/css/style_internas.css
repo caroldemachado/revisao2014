@@ -2,6 +2,7 @@
 
 h1 {
 	color: #52525F;
+	display: inline-block;
 	font-size: 40px;
 }
 
