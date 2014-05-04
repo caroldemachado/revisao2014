@@ -68,8 +68,9 @@
     			</article>
     			<!--  Até aqui aqui-->
     			<?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
-    			<?php if (function_exists('pagination_funtion')) pagination_funtion(); ?>
-    		</div>
+	    		<div>
+	    			<?php if (function_exists('pagination_funtion')) pagination_funtion(); ?>
+	    		</div>
 		</section>
 <!-- ################# rodapé ############################ -->
 		<?php get_template_part('footer'); ?> 
