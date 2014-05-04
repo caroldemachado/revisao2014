@@ -46,7 +46,7 @@
 <!-- ################# banner ############################ -->
 		<section class="banner-half">
 			<div class="container">
-				<img src="<?php bloginfo('template_url') ?>/img/full-banner.png" alt="revisão de texto para blogs"/>
+				<a href="#"><img src="<?php bloginfo('template_url') ?>/img/full-banner.png" alt="revisão de texto para blogs"/></a>
 			</div>
 		</section>
 <!-- ################# conteúdo ############################ -->
@@ -57,24 +57,18 @@
 
 				<article class="post-box">
 					<a href="<?php the_permalink() ?>">
-		      			<?php the_post_thumbnail(array(240,115)); ?></a>
+		      			<?php the_post_thumbnail(array(240,115)); ?>
 		      			<h2><?php the_title(); ?></h2>
 	      			</a>
 	      			<div class="post-info tag-categoria"><?php the_category(' '); ?></div>
-	      			<p><a href=""><?php the_excerpt(); ?></a></p>
+	      			<p>
+	      				<a href="<?php the_permalink() ?>">
+	      				<?php echo excerpt('30'); ?></a>
+	      			</p>
     			</article>
     			<!--  Até aqui aqui-->
     			<?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
-    			<ul>
-					<li class="clicked"><a href="">1</a></li>
-					<li><a href="">2</a></li>
-    				<li><a href="">3</a></li>
-    				<li><a href="">4</a></li>
-    				<li><a href="">5</a></li>
-    				<li><a href="">6</a></li>
-    				<li><a href="">7</a></li>
-    				<li><a href="">8</a></li>
-    			</ul>
+    			<?php if (function_exists('pagination_funtion')) pagination_funtion(); ?>
     		</div>
 		</section>
 <!-- ################# rodapé ############################ -->
