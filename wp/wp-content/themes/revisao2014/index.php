@@ -1,86 +1,49 @@
 <!-- Load Head -->
 <?php get_template_part('head'); ?> 
 
-
 <!-- ################# cabeçalho ############################ -->
-	<?php get_template_part('header'); ?> 
+<?php get_template_part('header'); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
 
 
-<!-- ################# frase destaque ############################## -->
-
-				<?php query_posts( array( 'posts_per_page' =>4) );
-				if (have_posts() ) : ?>
-		<section class="frase-destaque">
-			<div class="container">
-				<blockquote><?php the_field('home-slogan') ?></blockquote>
-
-<!-- ################# newsletter ############################## -->
-    			<div class="newsletter">
-
-					<?php get_template_part('newsletter','form'); ?> 
-
-    			</div>
+<!-- ################# conteúdo ########################## -->
+<div class="clearfix container">
+	<div class="content-container">
+		<article>
+			<div class="img-container"><?php the_post_thumbnail( 'single-thumb'); ?></div>
+			<h1><?php the_title(); ?></h1>
+			<div class="main-content">
+				<?php the_content() ?>
 			</div>
-		</section>
-
-<!-- ################# conteúdo recente ############################ -->
-		<section class="conteudo-recente">
-			<div class="container">
-
-				<!--  Repete aqui-->
-
-				<?php while ( have_posts() ) : the_post(); ?>
-
-
-				<article class="post-box">
-					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(520,250)); ?></a>
-	      			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-      				<div class="post-info tag-categoria"><?php the_category(); ?></div>
-      				<span class="post-data"><?php the_date('d \d\e F'); ?></span>
-      				<p><a href="<?php the_permalink() ?>"><?php the_excerpt(); ?></a></p>
-    			</article>
-
-				<!--  Até aqui aqui-->
-    			<?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
+		</article>
+	</div><!-- End Content container -->
 
 
 
-		</section>
-<!-- ################# banner ############################ -->
-		<section class="banner-half">
-			<div class="container">
-				<a href="#"><img src="<?php bloginfo('template_url') ?>/img/full-banner.png" alt="revisão de texto para blogs"/></a>
-			</div>
-		</section>
-<!-- ################# conteúdo ############################ -->
-		<section class="conteudo-geral">
-			<div class="container clearfix">
-				<!--  Repete aqui-->
-				<?php query_posts( array( 'posts_per_page' =>12, 'offset' => 4) );
-				if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<!-- ################# Sidebar ######################## -->
+	<aside class="sidebar">
 
-				<article class="post-box">
-					<a href="<?php the_permalink() ?>">
-		      			<?php the_post_thumbnail('home-thumb-small'); ?>
-		      			<h2><?php the_title(); ?></h2>
-	      			</a>
-	      			<div class="post-info tag-categoria"><?php the_category(' '); ?></div>
-	      			<p>
-	      				<a href="<?php the_permalink() ?>">
-	      				<?php echo excerpt('30'); ?></a>
-	      			</p>
-    			</article>
-    			<!--  Até aqui aqui-->
-    			<?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
-	    		<div>
-	    			<?php if (function_exists('pagination_funtion')) pagination_funtion(); ?>
-	    			
-	 
-	    		</div>
-		</section>
+		<!-- Newsletter -->
+		<div class="single newsletter">
+			<?php get_template_part('newsletter','form'); ?> 
+		</div>
+
+		<!-- Author Info -->
+		<div class="author-info">
+			<div class="author-photo"><?php if (function_exists('get_avatar')) { echo get_avatar( get_the_author_email(), '100' ); }?></div>
+			<h4><?php the_author(); ?></h4>
+			<p><?php the_author_meta( description, $userID ); ?><p>
+			<a href="<?php the_author_url(); ?>">Saiba mais sobre o autor.</a> 
+			<a href"<?php the_author_posts(); ?>">Mais posts desse autor.</a> 
+		</div>
+
+	</aside>
+</div><!-- End Container -->
+
+
 <!-- ################# rodapé ############################ -->
-		<?php get_template_part('footer'); ?> 
+<?php get_template_part('footer'); ?> 
 
-			
-	</body>
+
+</body>
 </html>
