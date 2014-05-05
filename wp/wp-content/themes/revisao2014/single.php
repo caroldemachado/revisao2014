@@ -10,7 +10,7 @@
 <div class="clearfix container">
 	<div class="content-container">
 		<article>
-			<div class="img-container"><?php the_post_thumbnail(array(803,328)); ?></div>
+			<div class="img-container"><?php the_post_thumbnail( 'single-thumb'); ?></div>
 			<h1><?php the_title(); ?></h1>
 			<div class="post-info">
 				<div class="post-info tag-categoria"><?php the_category(); ?></div>

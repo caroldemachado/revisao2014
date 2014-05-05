@@ -5,11 +5,42 @@
 // 1 - Adicona o thumbnail
 add_theme_support( 'post-thumbnails' ); 
 
+    // Set "Thumbnail" image size
+
+    if (function_exists('add_theme_support')) {
+        add_theme_support( 'post-thumbnails' );
+        set_post_thumbnail_size( 75, 75, true ); // default thumbnail size
+        add_image_size('home-thumb-large', 520, 250, true); //custom size
+        add_image_size('single-thumb', 815, 330, true); //custom size
+    }
+    /*
+    if (function_exists('add_theme_support')) {
+        add_theme_support( 'post-thumbnails' );        
+        add_image_size('my-custom-thumb-small', 240, 115, true);
+        add_image_size('my-custom-thumb-medium', 520, 250, true);
+        add_image_size('my-custom-thumb-02', 815, 392, true);
+    }*/
+
+    function overwrite_recropped_thumbnail($resized_file) {
+    // Remove timestamp added to re-cropped images. TODO improve regex to avoid
+    // accidental path changes
+    $new_path = preg_replace( '/-e([0-9]+)-/', '-', $resized_file, -1, $count );
+    if($count>0) { // The file path had the timestamp, move back to original name
+        rename($resized_file, $new_path);
+        return $new_path;
+    } else { // do nothing
+        return $resized_file;
+    }
+}
+add_filter('image_make_intermediate_size', 'overwrite_recropped_thumbnail',10);
+
+
+
 //2 - adicionar menu
 if ( function_exists( 'register_nav_menu' ) ) {
-register_nav_menu( 'meu_menu', 'Este é meu primeiro menu' );
-register_nav_menu( 'menu_de_categorias', 'Este é meu segundo menu' );
-//register_nav_menu( 'segundo_menu', 'Este é meu segundo menu' );
+    register_nav_menu( 'meu_menu', 'Este é meu primeiro menu' );
+    register_nav_menu( 'menu_de_categorias', 'Este é meu segundo menu' );
+    //register_nav_menu( 'segundo_menu', 'Este é meu segundo menu' );
 }
  
 

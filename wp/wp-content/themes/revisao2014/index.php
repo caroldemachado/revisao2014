@@ -27,10 +27,11 @@
 			<div class="container">
 
 				<!--  Repete aqui-->
-				 <?php query_posts($query_string.'showposts=4'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php query_posts( array( 'posts_per_page' =>4) );
+				if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<article class="post-box">
-					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(520,250)); ?></a>
+					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('home-thumb-large'); ?></a>
 	      			<h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
       				<div class="post-info tag-categoria"><?php the_category(); ?></div>
       				<span class="post-data"><?php the_date('d \d\e F'); ?></span>
