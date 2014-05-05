@@ -54,11 +54,7 @@
 		<section class="conteudo-geral">
 			<div class="container clearfix">
 				<!--  Repete aqui-->
-				 <?php // query_posts($query_string.'showposts=12'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				
-				<?php
-				query_posts( array( 'posts_per_page' => 12, 'offset' => 4) );
-				if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				 <?php query_posts($query_string.'showposts=12'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<article class="post-box">
 					<a href="<?php the_permalink() ?>">
@@ -75,6 +71,7 @@
     			<?php endwhile; else: ?><p><?php _e('Desculpe, não temos posts disponíveis.'); ?></p><?php endif; ?>
 	    		<div>
 	    			<?php if (function_exists('pagination_funtion')) pagination_funtion(); ?>
+	 
 	    		</div>
 		</section>
 <!-- ################# rodapé ############################ -->
