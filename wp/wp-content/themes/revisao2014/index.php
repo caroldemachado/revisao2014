@@ -7,9 +7,12 @@
 
 
 <!-- ################# frase destaque ############################## -->
+
+				<?php query_posts( array( 'posts_per_page' =>4) );
+				if (have_posts() ) : ?>
 		<section class="frase-destaque">
 			<div class="container">
-				<blockquote>"Toda vez que manda um texto para ser publicado, o autor se coloca nas mãos do revisor, esperando que seu parceiro não falhe." (L.F. Verissimo)</blockquote>
+				<blockquote><?php the_field('home-slogan') ?></blockquote>
 
 <!-- ################# newsletter ############################## -->
     			<div class="newsletter">
@@ -25,8 +28,7 @@
 			<div class="container">
 
 				<!--  Repete aqui-->
-				<?php query_posts( array( 'posts_per_page' =>4) );
-				if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
 				<article class="post-box">
 					<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('home-thumb-large'); ?></a>
