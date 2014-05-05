@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Revisão para quê? | Revisão de texto com bom humor</title>
+    <title><?php bloginfo('title') ?> | <?php bloginfo('description') ?></title>
     <link href="<?php bloginfo('template_url') ?>/css/reset.css" type="text/css" rel="stylesheet">
     <link href="<?php bloginfo('template_url') ?>/css/style.css" type="text/css" rel="stylesheet">
     <link href="<?php bloginfo('template_url') ?>/css/style_internas.css" type="text/css" rel="stylesheet">
