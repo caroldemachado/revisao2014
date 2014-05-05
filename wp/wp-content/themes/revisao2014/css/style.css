@@ -201,6 +201,7 @@ body{
 		float: left;
 		height: 350px;
 		margin: 75px 40px 10px 0;
+		overflow:hidden;
 		width: 240;
 	}
 
@@ -256,7 +257,8 @@ body{
 
 	footer {
 		background: #FAF9F4;
-		height: 250px
+		margin:60px 0 0 0;
+
 	}
 
 	footer aside {
