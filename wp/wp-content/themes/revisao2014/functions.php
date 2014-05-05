@@ -79,10 +79,12 @@ if ( $total > 1 )  {
             'current' => $current_page,
             'total' => $total,
             'mid_size' => 2,
+            'prev_next' => False,
             'type' => 'list'
         ));
     }
 }
+
 /** END Pagination */
 
 ?>

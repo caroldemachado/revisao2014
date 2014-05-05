@@ -226,7 +226,7 @@ body{
 
 	.page-numbers li {
 		display: inline-block;
-		margin: 50px 0;
+		margin: 40px 2px;
 	}
 	
 	.page-numbers li a {
