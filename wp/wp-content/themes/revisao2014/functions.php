@@ -10,6 +10,7 @@ add_theme_support( 'post-thumbnails' );
     if (function_exists('add_theme_support')) {
         add_theme_support( 'post-thumbnails' );
         set_post_thumbnail_size( 75, 75, true ); // default thumbnail size
+        add_image_size('home-thumb-small', 240, 115, true); //custom size
         add_image_size('home-thumb-large', 520, 250, true); //custom size
         add_image_size('single-thumb', 815, 330, true); //custom size
     }

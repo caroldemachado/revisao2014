@@ -13,11 +13,9 @@
 
 <!-- ################# newsletter ############################## -->
     			<div class="newsletter">
-    				<form action="">
-		     			<h3>Receba novidades esclusivas no seu e-mail!</h3>
-		     			<input type="text" placeholder="Qual é o seu e-mail?">
-		      			<button class="btn">cadastrar</button>	      			
-	      			</form>
+
+					<?php get_template_part('newsletter','form'); ?> 
+
     			</div>
 			</div>
 		</section>
@@ -54,11 +52,12 @@
 		<section class="conteudo-geral">
 			<div class="container clearfix">
 				<!--  Repete aqui-->
-				 <?php query_posts($query_string.'showposts=12'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<?php query_posts( array( 'posts_per_page' =>12, 'offset' => 4) );
+				if (have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<article class="post-box">
 					<a href="<?php the_permalink() ?>">
-		      			<?php the_post_thumbnail(array(240,115)); ?>
+		      			<?php the_post_thumbnail('home-thumb-small'); ?>
 		      			<h2><?php the_title(); ?></h2>
 	      			</a>
 	      			<div class="post-info tag-categoria"><?php the_category(' '); ?></div>

@@ -62,11 +62,7 @@
 
 		<!-- Newsletter -->
 		<div class="single newsletter">
-			<form action="">
-				<h3>Receba novidades esclusivas no seu e-mail!</h3>
-				<input type="text" placeholder="Qual é o seu e-mail?">
-				<button class="btn">cadastrar</button>		
-			</form>
+			<?php get_template_part('newsletter','form'); ?> 
 		</div>
 
 		<!-- Author Info -->
